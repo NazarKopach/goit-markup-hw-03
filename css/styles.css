@@ -1,3 +1,5 @@
+/* COMMON */
+
 body{
     font-family: 'Roboto', sans-serif;
     color:#434455;
@@ -10,6 +12,35 @@ a {
 
 ul, ol{
     list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.container{
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+margin: 0;
+}
+
+/* header */
+
+.header{
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-conteiner{
+    display:flex;
+    align-items: center;
 }
 
 /* Logo */
@@ -22,6 +53,7 @@ ul, ol{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .logo-part {
@@ -30,12 +62,24 @@ ul, ol{
 
 /* Nav */
 
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list{
+    display:flex;
+    gap: 40px;
+}
+
 .nav-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
+    display:block;
 }
 
 .nav-link:hover,
@@ -45,8 +89,14 @@ ul, ol{
 
 /* Addres */
 
-.addres {
-    font-style: normal
+.address-list{
+    display:flex;
+    gap: 40px;
+}
+
+.address {
+    font-style: normal;
+    margin-left: auto;
 }
 
 .addres-link {
@@ -61,12 +111,24 @@ ul, ol{
     color:#404BBF
 }
 
-/* Main */
+/* HERO */
 
-.main{
+.hero{
     background-color: #2e2f42;
+    max-width:1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.main-title{
+
+.container-hero{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 188px;
+}
+
+.hero-title{
+    max-width: 496px;
     background: #2e2f42;
     font-weight: 700;
     font-size: 56px;
@@ -74,13 +136,15 @@ ul, ol{
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    padding-top: 188px;
+    padding-bottom: 30px;
+}
+
+button {
+    cursor: pointer;
 }
 
 .button{
-    cursor:pointer;
-}
-
-.button {
     font-family: "Roboto", sans-serif;
     background-color: #4d5ae5;
     font-weight: 500;
@@ -88,6 +152,11 @@ ul, ol{
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
+    border:none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
 }
 
 .button:hover,
@@ -97,13 +166,28 @@ ul, ol{
 
 /* Tech */
 
-.tech-title{
+.tech-list{
+    display: flex;
+    gap: 15px;
+}
+
+.tech-visually-hidden{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
 }
 
 .tech-title-name{
@@ -125,7 +209,18 @@ ul, ol{
 /* Team */
 .team-main{
     background-color:#f4f4fd;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:1440px;
+    height: 732px;
 }
+
+.team-list{
+    display:flex;
+    gap:15px;
+    margin: 72px auto 120px;
+}
+
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -142,6 +237,9 @@ ul, ol{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
+    padding-top:32px;
+    padding-bottom: 8px;
 }
 
 .team-title-info {
@@ -150,10 +248,13 @@ ul, ol{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
+    padding-bottom: 32px;
 }
 
 .team-list-item{
     background-color: #ffffff;
+    width: 264px;
 }
 
 /* Portfolio */
@@ -166,6 +267,13 @@ ul, ol{
     text-align: center;
     color: #2e2f42;
     text-transform:capitalize;
+    margin-bottom: 72px;
+}
+
+.potfolio-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:24px;
 }
 
 .portfolio-title-name {
@@ -174,6 +282,8 @@ ul, ol{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-top: 32px;
+    padding-left: 16px;
 }
 
 .portfolio-title-info {
@@ -182,6 +292,12 @@ ul, ol{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-top: 8px;
+    padding-left: 16px;
+}
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 /* Footer */
@@ -192,10 +308,16 @@ ul, ol{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    width: 264px;
+    padding-top: 16px;
 }
 
 .footer{
     background-color: #2e2f42;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 .logo-part-footer{
@@ -206,4 +328,5 @@ ul, ol{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
+    padding-top: 100px;
 }
