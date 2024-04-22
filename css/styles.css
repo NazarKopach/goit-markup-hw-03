@@ -179,6 +179,7 @@ button {
 .tech-list{
     display: flex;
     gap: 24px;
+    width: calc((100% - 72)/4s);
 }
 
 .visually-hidden {
@@ -262,7 +263,7 @@ button {
 
 .team-list-item{
     background-color: #ffffff;
-    width: 264px;
+    width: calc((100% - 72)/4);
     border-radius: 0px 0px 4px 4px;
 }
 
