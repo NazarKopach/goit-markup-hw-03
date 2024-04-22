@@ -65,7 +65,7 @@ img{
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
-    padding-top: 16px;
+    display: inline-block;
 }
 
 .logo-part {
@@ -346,9 +346,4 @@ button {
     text-transform: uppercase;
     color: #f4f4fd;
     padding-top: 100px;
-}
-
-.logo{
-    display: inline-block;
-    margin-bottom: 16px;
 }
