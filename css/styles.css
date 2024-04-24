@@ -41,9 +41,6 @@ margin: 0;
 
 .header{
     border-bottom: 1px solid #e7e9fc;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .header-conteiner{
@@ -332,10 +329,6 @@ button {
 
 .footer{
     background-color: #2e2f42;
-    max-width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 100px 0;
 }
 
 .logo-part-footer{
